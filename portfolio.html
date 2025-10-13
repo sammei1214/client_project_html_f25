@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>MSI Career Development Resource Hub</title>
 </head>
 <body>
 
     <header>
-  <a href="#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" style="width:200px;">
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "resume.html">Resumes</a></li>
-                <li><a href = "networking.html">Networking & Connections</a></li>
-                <li><a href = "portfolio.html">Portfolio</a></li>
+                <img class="site-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                <li class="nav-item"><a href = "index.html">Home</a></li>
+                <li class="nav-item"><a href = "resume.html">Resumes</a></li>
+                <li class="nav-item"><a href = "networking.html">Networking & Connections</a></li>
+                <li class="nav-item"><a href = "portfolio.html" class="current">Portfolio</a></li>
             </ul>
         </nav>
-        <h1>Portfolio</h1>
-
+    <h1>Portfolio</h1>
     </header>
+    
 <main id="main">
   
   <section>
@@ -69,29 +75,41 @@
     </ul>
   </section>
 
-  <section>
+  <section class="portfolio-examples">
     <h2>Portfolio Examples</h2>
-    <ul>
-      <li>
-        <strong><a href = "https://www.cofolios.com/">Cofolio</a></strong><br>
-        Discover design intern portfolios at top tech companies like Meta, Google, and Apple.<br>
-        <img src="images/Cofolio_homepage.png" alt="Homepage of the Cofolio website with Portfolio Highlights." style="width:600px;">
-      </li>
-      <li>
-        <strong><a href = "https://www.bestfolios.com/home">Bestfolio</a></strong><br>
-        Bestfolios is a gallery featuring 100 portfolios, 50 resumes and many more design inspirations.<br>
-        <img src="images/Bestfolio_homepage.png" alt="Homepage of the Bestfolio website with Portfolio Highlights." style="width:600px;">
-      </li>
-    </ul>
-    <p>
-      Need feedback? You can always <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a CDO Career Coach</a> to review your materials.
-    </p>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <a href="https://www.cofolios.com/" target="_blank">Cofolio</a>
+      </div>
+      <div class="portfolio-description">
+        Discover design intern portfolios at top tech companies like Meta, Google, and Apple.
+      </div>
+      <div class="portfolio-img">
+        <img src="images/Cofolio_homepage.png" alt="Homepage of the Cofolio website with Portfolio Highlights.">
+      </div>
+
+      <div class="portfolio-item">
+        <a href="https://www.bestfolios.com/home" target="_blank">Bestfolio</a>
+      </div>
+      <div class="portfolio-description">
+        Bestfolios is a gallery featuring 100 portfolios, 50 resumes and many more design inspirations.
+      </div>
+      <div class="portfolio-img">
+        <img src="images/Bestfolio_homepage.png" alt="Homepage of the Bestfolio website with Portfolio Highlights.">
+      </div>
+
+      <p class="feedback-cta">
+        Need feedback? You can always <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a CDO Career Coach</a> to review your materials.
+      </p>
+    </div>
   </section>
-    </main>
+  </main>
     
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-        </footer>
+        <p>University of Michigan School of Information</p>
+        <p><a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
+        <p>&copy; 2025 All Rights Reserved.</p>
+    </footer>
     
 </body>
 

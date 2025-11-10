@@ -11,13 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>MSI Career Development Resource Hub</title>
 </head>
-<body>
 
+<body>
+  
     <header>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <nav>
             <ul>
-                <li><img class="site-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></li>
+                <li><a href="index.html"><img class="site-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></a></li>
                 <li class="nav-item"><a href = "index.html" class="current">Home</a></li>
                 <li class="nav-item"><a href = "resume.html">Resumes</a></li>
                 <li class="nav-item"><a href = "networking.html">Networking & Connections</a></li>
@@ -80,14 +81,30 @@
         The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource guides. <a href="https://umich.instructure.com/courses/137916" target="_blank">Visit the CDO website</a> or <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank">find us on campus</a> to learn more, schedule a coaching session, or just say hello.
       </p>
     </section>
-       
-        <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
-        UMGPT. (2025). UMGPT ( GPT-4.1 August 25th version) [Large language model]. -->
-    </main>
-    <footer>
-        <p>University of Michigan School of Information</p>
+</main>
+<footer>
+        <p><a href="index.html">University of Michigan School of Information</a></p>
         <p><a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
-        <p>&copy; 2025 All Rights Reserved.</p>
-    </footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/uomsi" class="social-link" target="_blank">
+                <img src="images/icon-white_facebook.png" alt="Facebook icon">
+                <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/umschoolofinformation/" class="social-link" target="_blank">
+                <img src="images/icon-white_instagram.png" alt="Instagram icon">
+                <span>Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/" class="social-link" target="_blank">
+                <img src="images/icon-white_linkedin.png" alt="LinkedIn icon">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://www.youtube.com/@SchoolofInformation" class="social-link" target="_blank">
+                <img src="images/icon-white_youtube.png" alt="YouTube icon">
+                <span>YouTube</span>
+            </a>
+        </div>
+        <p>&copy; <span id="year"></span> All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
